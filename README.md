@@ -1,6 +1,6 @@
 # GreHack22 - SecureDUO
 The RISC-V challenges are splitted into 3 differents challs with dangerous steps between them ;)  
-Every challs are based on the hydrausb board with WCH CH569 MCU. [hydrausb](https://github.com/hydrausb3/hydrausb3_fw)  
+Every challs are based on the hydraUSB3 board with WCH CH569 MCU. [hydrausb](https://github.com/hydrausb3/hydrausb3_fw)  
 Thanks to Benjamin Vernoux for da military boards [bvernoux](https://github.com/bvernoux).
 
 ## Setup
@@ -10,7 +10,7 @@ Requirements:
 - Download Ghidra 10.2.2 (at least)
 - Download MounRiver Studio + toolchain [link](http://www.mounriver.com/download)
 - Clone svd-loader [link](https://github.com/leveldown-security/SVD-Loader-Ghidra)
-- The SVD file for CH569 (CH56Xxx.svd provided), this file is comming from the MounRiver
+- The SVD file for CH569 (CH56Xxx.svd provided), this file is coming from the MounRiver
 - Coffee(s)
 
 Then, you have to:
@@ -194,6 +194,11 @@ So, you need to find a valid input to get this output, choose the brute force to
     '''
 
 Unfortunatly, I didn't find this one during the CTF, but an other team succed, good job guys ;)  
-  
+
+## Emulation  
+You can use unicorn to get the first flag and even the second but it's maybe overkill ;)  
+This solution is in the file emu_unicorn.py  
+Enjoy  
+
 Thanks again to bvernoux for theses challenges !  
 Maybe I will make a writeup for the last flag if I can solve it ;) 
