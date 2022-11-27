@@ -106,11 +106,14 @@ The "USB CMD locked" string can be found with Ghidra, and the reference to this 
     
 
 > The DAT_20000480 value must be set to 1 to unlock the USB CMD.  
+
 > A specific header is waited in the USB buffer to enter in the special function below.  
+
 > FUN_000008f0 is a function sending log to UART1.  
+
 > The function to reverse to unlock this command is the one between the 2 log functions (FUN_0000244a).  
 
-Reverse of the unlock function:
+Reverse of the unlock function:  
 The DAT_20000480 value is written in this function at the end, so we are in the good place to unlock the USB CMD.
 
     ...
